@@ -37,7 +37,7 @@ things I just didn't think about:
   open. This is a known simplification but a more realistic version would trade at the next   	    available price instead.
 - **Any position still open at the end of the data gets force-closed** at the
   last available price, so total return is always a complete number.
-- **No transaction costs or slippage modeled.** Real trading has fees and
+- **No transaction costs or slippage modeled.** Trading has fees and
   price impact, so real-world performance would be somewhat worse than what's reported here.
 
 ## Known limitations / what I'd add next
@@ -69,5 +69,4 @@ Needs a C++ compiler with at least C++17 (uses CTAD in a couple of spots).
 Drop a Stooq-format CSV (ticker.us.txt) in the working directory, update the
 `config` namespace in `main.cpp` if you want different settings, build, run.
 
-Data source: [Stooq](https://stooq.com) — free historical daily price data,
-no signup needed.
+Data source: [Stooq](https://stooq.com) — free historical daily price data.
