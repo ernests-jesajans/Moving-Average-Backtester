@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="Backtester/Backtester.vcxproj" Id="1f4107ec-2e32-4180-bc1d-711d486dd28a" />
+</Solution>
