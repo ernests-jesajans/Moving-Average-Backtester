@@ -31,13 +31,13 @@ Return percentage: 68.56%
 A few things I deliberately kept simple for this first version, rather than
 things I just didn't think about:
 
-- **All-in, all-out position sizing** — every buy converts 100% of cash into
+- **All in, all out position sizing**, every buy converts 100% of cash into
   units, every sell converts 100% back to cash.
 - **Trades execute at the signal day's closing price**, not the next day's
   open. This is a known simplification but a more realistic version would trade at the next   	    available price instead.
-- **Any position still open at the end of the data gets force-closed** at the
+- **Any position still open at the end of the data gets force closed** at the
   last available price, so total return is always a complete number.
-- **No transaction costs or slippage modeled.** Trading has fees and
+- **No transaction costs modeled.** Trading has fees and
   price impact, so real-world performance would be somewhat worse than what's reported here.
 
 ## Known limitations / what I'd add next
@@ -49,7 +49,7 @@ things I just didn't think about:
 - The buy-and-hold and moving-average simulations share a decent chunk of
   logic (the day-by-day portfolio bookkeeping) that could be factored out
   instead of duplicated.
-- Only one strategy (MA crossover) is implemented beyond the buy-and-hold
+- Only one strategy (MA crossover) is implemented beyond the buy and hold
   baseline. Would like to add a mean-reversion strategy for a more
   interesting comparison, and eventually make strategies swappable via
   polymorphism (when learnt) instead of separate functions.
